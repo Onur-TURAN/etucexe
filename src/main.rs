@@ -1,3 +1,9 @@
+mod utils;
+
 fn main() {
-    println!("Hello, world!");
+    let result = utils::strings::extract_strings("program.exe").unwrap();
+
+    for s in result {
+        println!("{}", s);
+    }
 }
